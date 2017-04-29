@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/commonfooter.css"/>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			li {
+				list-style: none;
+			}
+			/*头部*/
+			
+			.header {
+				width: 100%;
+				height: 130px;
+				border-bottom: 2px solid #382101;
+			}
+			
+			.header_main {
+				width: 1200px;
+				padding-top: 12px;
+				height: 66px;
+				margin: 0 auto;
+			}
+			
+			.header_main_l {
+				float: left;
+			}
+			
+			.header_main_r {
+				float: right;
+			}
+			
+			.header_main_r p {
+				font-size: 12px;
+			}
+			
+			.header_main_r p span {
+				font-size: 16px;
+				font-weight: bolder;
+			}
+			
+			.search {
+				width: 235px;
+				height: 26px;
+				border-radius: 30px;
+				margin-top: 15px;
+				overflow: hidden;
+			}
+			
+			#sea_text {
+				width: 128px;
+				height: 24px;
+				background: none;
+				border: 1px solid #cccccc;
+				border-right: 0;
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+				padding: 0 10px 0 20px;
+			}
+			
+			#btn {
+				width: 76px;
+				height: 26px;
+				color: #fff;
+				text-indent: 15px;
+				border: none;
+				background: url(img/放大镜.png) no-repeat #382101 center left 15px;
+				/*position: relative;
+    				left: -2px;*/
+			}
+			
+			.nav {
+				margin-top: 9px;
+				float: right;
+			}
+			
+			.nav a {
+				display: inline-block;
+				color: #382101;
+				font-size: 14px;
+				padding: 12px 28px;
+				border-radius: 10px;
+			}
+			
+			.nav a:hover {
+				background-color: rgb(42, 25, 0);
+				color: white;
+			}
+			/*产品中心*/
+			/*middle_h*/
+			
+			.middle_h {
+				width: 1164px;
+				height: 74px;
+				margin: 0 auto;
+				line-height: 74px;
+				padding-left: 36px;
+				border-bottom: 1px solid #e5e5e5;
+				font-size: 12px;
+				color: #666666;
+			}
+			
+			.middle_h a {
+				color: #666666;
+				;
+			}
+			
+			.middle_h a:hover {
+				color: orange;
+			}
+			/**/
+			
+			.middle_main {
+				/*overflow: hidden;*/
+				margin: 0 auto;
+				margin-top: 27px;
+				width: 1200px;
+				/*height: 1000px;*/
+			}
+			
+			.header_main_l {
+				width: 173px;
+				float: left;
+				
+			}
+			
+			.middle_main_l h1 {
+				width: 173px;
+				font-size: 20px;
+				height: 64px;
+				line-height: 64px;
+				text-align: center;
+				background-color: #ffd200;
+				color: #382101;
+			}
+			
+			.middle_main_l_left {
+				float: left;
+				/*width: ;*/
+			}
+			
+			.middle_main_l_right {
+				width: 142px;
+				float: left;
+			}
+			
+			#ul1 {
+				width: 142px;
+				padding-top: 15px;
+				border-left: 1px solid darkgray;
+			}
+			
+			#ul1 li {
+				width: 142px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+			}
+			
+			#ul1 li a {
+				display: inline-block;
+				height: 40px;
+				line-height: 40px;
+				color: #382101;
+				font-size: 14px;
+			}
+			
+			#ul1 li a:hover {
+				border-bottom: 2px solid #ffd200;
+			}
+			
+			#haige {
+				border-bottom: 2px solid #ffd200;
+			}
+			
+			.middle_main_r_father {
+				width: 993px;
+				float: right;
+				height: 1000px;
+				/*overflow: hidden;*/
+				position: relative;
+			}
+			
+			.middle_main_r {
+				width: 993px;
+				height: 1000px;
+				position: absolute;
+				top: 0;
+			}
+			
+			.middle_main_r .tianjia {
+				margin-top: 20px;
+				width: 876px;
+				height: 93px;
+				background-color: #f7f7f7;
+				border-left: 4px solid #ffd200;
+				font-size: 20px;
+				color: #333333;
+				font-weight: bolder;
+				line-height: 93px;
+				padding: 0 31px 0 48px;
+			}
+			
+			.middle_main_r .tianjia .div1 {
+				float: left;
+				width: 280px;
+				font-size: 20px;
+				font-weight: bolder;
+				line-height: 93px;
+			}
+			
+			.middle_main_r .tianjia .div2 {
+				float: left;
+				width: 250px;
+				font-size: 14px;
+				line-height: 93px;
+			}
+			
+			.middle_main_r .tianjia .div3 {
+				float: left;
+				margin-left: 94px;
+				line-height: 93px;
+				font-size: 14px;
+			}
+			
+			.middle_main_r .tianjia .zhankai {
+				float: right;
+				line-height: 93px;
+				font-size: 14px;
+				cursor: pointer;
+			}
+			
+			.middle_main_r .div4 {
+				width: 880px;
+				padding: 29px 31px 29px 48px;
+				background-color: rgb(245,245,245);
+				display: none;
+				border: none;
+			}
+			.middle_main_r .div4 .p{
+				font-size: 12px;
+				color: gray;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="header_main">
+				<div class="header_main_l">
+					<img src="img/上部logo.png"/>
+				</div>
+				<div class="header_main_r">
+					<p><img src="img/电话logo.gif"/>服务热线：<span>400-6655-888</span>|
+						<a href="index.html#load_first"><img src="img/手机logo.gif"/>手机下载</a></p>
+					<div class="search">
+						<input type="text" id="sea_text" placeholder="请输入关键词" /><a href="search.html"><input type="submit" name="btn" id="btn" value="搜索" /></a>
+					</div>
+				</div>
+				<div class="nav">
+					<a href="index.html">首页</a>
+					<a href="about.html">关于小羽佳</a>
+					<a href="product.html">产品中心</a>
+					<a href="news.html">新闻中心</a>
+					<a href="cooperation.html">合作加盟</a>
+					<a href="employ.html" style="color: white;background-color: rgb(42,25,0);">人才招聘</a>
+					<a href="contact.html">联系我们</a>
+				</div>
+			</div>
+		</div>
+		<!---->
+		<div class="middle">
+			<div class="middle_h">
+				<img src="img/产品中心_房子_logo.png" />
+				<a href="index.html">首页</a> >
+				<a href="employ.html">人才招聘</a>
+			</div>
+			<div class="middle_main">
+				<div class="middle_main_l">
+					<h1>人才招聘</h1>
+					<div class="middle_main_l_left">
+						<img src="img/产品中心_小三角.png" />
+					</div>
+					<div class="middle_main_l_right">
+						<ul id="ul1">
+							<li>
+								<a class="chanpin" href="#">工程部</a>
+							</li>
+							<li>
+								<a class="chanpin" href="#">保洁部</a>
+							</li>
+							<li>
+								<a class="chanpin" href="#">搬家部</a>
+							</li>
+							<li>
+								<a class="chanpin" href="#">家政部</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="middle_main_r_father">
+					<div class="middle_main_r">
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+    
+		<!--底部-->
+		<!--底部-->
+		<!--倒数第二个-->
+		<div class="foot_er">
+			<div class="foot_er1">
+				<br /><br /><br /><br /><br />
+				<ul>
+					<li> 
+						<p>服务说明</p> <br />
+						<p><a href="service_assurance.html">服务保障</a></p>
+					</li>
+					<li>
+						<p>帮助中心</p> <br />
+						<p><a href="fishman_guide.html">新手指导</a></p>
+					</li>
+					<li> 
+						<p>友情链接</p> <br />
+						<p><a href="#">厦门鑫点击网络科技股份有限公司</a></p>
+						<p><a href="#">建发股份</a></p>
+					</li>
+					<li> 
+						<p>关注与订阅</p> <br />
+						<p><a href="#"><img src="img/sina.png"/> &nbsp;&nbsp;微博关注</a></p>
+						<p><a href="#"><img src="img/wechat.png"/>&nbsp;&nbsp;&nbsp;微信关注</a></p>
+					</li>
+					<li><img src="img/二维码.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="foot_er_2">
+			CopyRight @ 2002--2017   闽ICP备07030066号-1777
+		</div>
+     
+	</body>
+	<script type="text/javascript">
+		//准备数据
+		var gongcheng = ["专业清洗工（地毯清洗...", "水电工", "疏通工", "专（兼职）空调工"];
+		var dizhi = ["大连市沙河口区高尔基路591号"];
+		var shijian = ["2016-07-19"];
+		var baojie = ["保洁员"];
+		var banjia = ["司机", "搬运工"];
+		var jiazheng = ["保姆"];
+		var neirong=[" 岗位职责：","1、从事地毯清洗、油烟机清洗、石材养护洗等工作；","任职要求：","1、能熟练操作各项专业清洗施工工艺、熟悉擦机、加重翻新机、吸尘机等设备操作保养程序；","2、无经验可培训，自备电动车熟悉厦门地形；","3、年龄25-45岁，小学以上文化；","4、诚实可靠，头脑灵活，身体健康、吃苦耐劳，无不良嗜好；","薪资福利：","月休4天，享受社医保，缴纳五险一金;","薪资4000-8000，缴纳五险一金。"," ","招聘热线：0592-2619624（林主管）"];
+		
+		
+		
+		
+		//
+		var middle_main_r=document.getElementsByClassName('middle_main_r')[0];
+		var middle_main_r_father=document.getElementsByClassName('middle_main_r_father')[0];
+		var bumen=document.getElementsByClassName("chanpin");
+		var as;
+		var div4;
+		rencai(middle_main_r,8,20,true);
+		xiang();
+		dianji();
+		function dianji(){
+			as=document.getElementsByClassName('zhankai');
+			div4=document.getElementsByClassName('div4');
+			for (var i=0;i<div4.length;i++) {
+				div4[i].style.display="none";
+			}
+			for (var i=0;i<as.length;i++) {
+				as[i].index=i;
+				as[i].onclick=function(){
+					if(div4[this.index].style.display=="none"){
+						middle_main_r_father.style.height=middle_main_r_father.offsetHeight+190+'px';
+						middle_main_r.style.height=middle_main_r.offsetHeight+190+'px';
+						this.innerHTML="收起 △";
+						div4[this.index].style.display="block";
+					}else{
+						middle_main_r_father.style.height=middle_main_r_father.offsetHeight-190+'px';
+						middle_main_r.style.height=middle_main_r.offsetHeight-190+'px';
+						this.innerHTML="展开 ▽";
+						div4[this.index].style.display="none";
+					}
+				}
+			}
+		}
+		
+		for (var i=0;i<4;i++) {
+			bumen[i].index=i;
+			bumen[i].onclick=function(){
+				for(var j = 0; j < bumen.length; j++) {
+					bumen[j].id = "";
+				}
+				this.id = "haige";
+				middle_main_r.innerHTML="";
+				switch (this.index){
+					case 0:
+					rencai(middle_main_r, 4, 3, false);
+					dianji()
+						break;
+					case 1:
+					rencai(middle_main_r, 1, 4, false);
+					dianji();
+						break;
+					case 2:
+					rencai(middle_main_r, 2, 6, false);
+					dianji();
+						break;
+					case 3:
+					rencai(middle_main_r, 1, 7, false);
+					dianji();
+						break;
+					default:
+						break;
+				}
+			}
+		}
+		
+		function xiang() {
+			var xiangqing = document.getElementsByClassName('xiangqing');
+			for(var i = 0; i < xiangqing.length; i++) {
+				xiangqing[i].onclick = function() {
+					window.location.href = "xiangqing.html";
+				}
+			}
+		}
+		function rencai(obj, i, x, bool) {
+			for(var j = 0; j < i; j++) {
+				var newDiv = document.createElement('div');
+				obj.appendChild(newDiv);
+				var newDiv1 = document.createElement('div');
+				newDiv.appendChild(newDiv1);
+				var newDiv2 = document.createElement('div');
+				newDiv.appendChild(newDiv2);
+				var newDiv3 = document.createElement('div');
+				newDiv.appendChild(newDiv3);
+				var newA = document.createElement('a');
+				newDiv.appendChild(newA);
+				var newDiv4 = document.createElement('div');
+				obj.appendChild(newDiv4);
+				var newPs=[];
+				for (var k=0;k<neirong.length;k++) {
+					newPs[k]=document.createElement('p');
+					newDiv4.appendChild(newPs[k]);
+				}
+				//样式
+				newDiv.className = "tianjia";
+				newDiv1.className = "div1";
+				newDiv2.className = "div2";
+				newDiv3.className = "div3";
+				newA.className = "zhankai";
+				newDiv4.className = "div4";
+				for (var k=0;k<newPs.length;k++) {
+					newPs[k].className="p";
+				}
+				//内容
+				if(bool){
+					if(j<4){
+						newDiv1.innerHTML=gongcheng[j];
+						newDiv2.innerHTML=dizhi[0];
+						newDiv3.innerHTML=shijian[0];
+						newA.innerHTML="展开 ▽";
+						for (var k=0;k<neirong.length;k++) {
+							newPs[k].innerHTML=neirong[k];
+						}
+					}
+					if(j>=4&&j<5){
+						newDiv1.innerHTML=baojie[j-4];
+						newDiv2.innerHTML=dizhi[0];
+						newDiv3.innerHTML=shijian[0];
+						newA.innerHTML="展开 ▽";
+						for (var k=0;k<newPs.length;k++) {
+							newPs[k].innerHTML=neirong[k];
+						}
+					}
+					if(j>=5&&j<7){
+						newDiv1.innerHTML=banjia[j-5];
+						newDiv2.innerHTML=dizhi[0];
+						newDiv3.innerHTML=shijian[0];
+						newA.innerHTML="展开 ▽";
+						for (var k=0;k<newPs.length;k++) {
+							newPs[k].innerHTML=neirong[k];
+						}
+					}
+					if(j>=7&&j<8){
+						newDiv1.innerHTML=jiazheng[j-7];
+						newDiv2.innerHTML=dizhi[0];
+						newDiv3.innerHTML=shijian[0];
+						newA.innerHTML="展开 ▽";
+						for (var k=0;k<newPs.length;k++) {
+							newPs[k].innerHTML=neirong[k];
+						}
+					}
+				}else{
+					if(x<4){
+						newDiv1.innerHTML=gongcheng[x];
+						newDiv2.innerHTML=dizhi[0];
+						newDiv3.innerHTML=shijian[0];
+						newA.innerHTML="展开 ▽";
+						for (var k=0;k<neirong.length;k++) {
+							newPs[k].innerHTML=neirong[k];
+						}
+						x--;
+					}
+					if(x>=4&&x<5){
+						newDiv1.innerHTML=baojie[x-4];
+						newDiv2.innerHTML=dizhi[0];
+						newDiv3.innerHTML=shijian[0];
+						newA.innerHTML="展开 ▽";
+						for (var k=0;k<newPs.length;k++) {
+							newPs[k].innerHTML=neirong[k];
+						}
+						x--;
+					}
+					if(x>=5&&x<7){
+						newDiv1.innerHTML=banjia[x-5];
+						newDiv2.innerHTML=dizhi[0];
+						newDiv3.innerHTML=shijian[0];
+						newA.innerHTML="展开 ▽";
+						for (var k=0;k<newPs.length;k++) {
+							newPs[k].innerHTML=neirong[k];
+						}
+						x--;
+					}
+					if(x>=7&&x<8){
+						newDiv1.innerHTML=jiazheng[x-7];
+						newDiv2.innerHTML=dizhi[0];
+						newDiv3.innerHTML=shijian[0];
+						newA.innerHTML="展开 ▽";
+						for (var k=0;k<newPs.length;k++) {
+							newPs[k].innerHTML=neirong[k];
+						}
+						x--;
+					}
+				}
+			}
+
+		}
+		
+		
+	</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

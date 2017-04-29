@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/commonfooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/commonheader.css"/>
+		<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+	</head>
+	<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<body>
+		
+		
+		<!--顶部-->
+		<div class="header">
+			<div class="header_main">
+				<div class="header_main_l">
+					<img src="img/上部logo.png"/>
+				</div>
+				<div class="header_main_r">
+					<p><img src="img/电话logo.gif"/>服务热线：<span>400-6655-888</span>|
+						<a href="index.html#load_first"><img src="img/手机logo.gif"/>手机下载</a></p>
+					<div class="search">
+						<input type="text" id="sea_text" placeholder="请输入关键词" /><a href="search.html"><input type="submit" name="btn" id="btn" value="搜索" /></a>
+					</div>
+				</div>
+				<div class="nav">
+					<a href="index.html">首页</a>
+					<a href="about.html">关于莲想</a>
+					<a href="product.html">产品中心</a>
+					<a href="news.html">新闻中心</a>
+					<a href="cooperation.html" >合作加盟</a>
+					<a href="employ.html">人才招聘</a>
+					<a href="contact.html" style="color: white;background-color: rgb(42,25,0);">联系我们</a>
+				</div>
+			</div>
+		</div>
+		
+		
+<!--主体部分-->		
+		<div class="contact_main">
+			<div class="pic1">
+				<img src="img/contact1.jpg"/>
+			<div class="divfixed">
+				
+			<div class="divfixed_up">
+				<div class="con_first">
+					<div><img src="img/小图标.png"/> &nbsp;&nbsp;<a href="index.html">首页</a> &nbsp;> &nbsp;<a href="#">联系我们</a></div>
+				</div>
+				
+				<div class="con_two">
+					<h1>大连莲想家政股份有限公司</h1>
+					
+					<p><img src="img/tel-111.png"/> <span class="span">电话 :0411-86599555</span> 
+					<img src="img/email.png" style="margin-left: 316px;"/><span class="span">邮箱：admin@xiaoyujia.com</span>
+					</p>
+					
+					<p><img src="img/dz.png"/>
+					<span class="span">地址：大连市沙河口区高尔基路591路(和平广场8号门斜对面)</span>
+					<img src="img/cz.png"  style="margin-left: 56px;"/>
+					<span class="span">传真：0592-2619624</span>
+					</p>
+					<p>
+						<img src="img/zsjm.png"/>
+						<span class="span">招商：公关媒介 / 0592-2619627</span>   <span>市场经理 / 13625013713</span>
+					<span class="span" style="margin-left: 24px;">招商加盟 / 13625013713</span>
+					</p>
+				</div>
+				
+			</div>
+			
+			<div class="divfixed_down">
+				<!--百度地图容器-->
+  <div style="width:1200px;height:500px;border:#ccc solid 1px;" id="dituContent"></div>
+			</div>
+			<div class="divfixed_footer">
+				
+			</div>
+			</div>
+			</div>
+			
+			
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--底部-->
+		<!--倒数第二个-->
+		<div class="foot_er">
+			<div class="foot_er1">
+				<br /><br /><br /><br /><br />
+				<ul>
+					<li> 
+						<p>服务说明</p> <br />
+						<p><a href="service_assurance.html">服务保障</a></p>
+					</li>
+					<li>
+						<p>帮助中心</p> <br />
+						<p><a href="fishman_guide.html">新手指导</a></p>
+					</li>
+					<li> 
+						<p>友情链接</p> <br />
+						<p><a href="#">厦门鑫点击网络科技股份有限公司</a></p>
+						<p><a href="#">建发股份</a></p>
+					</li>
+					<li> 
+						<p>关注与订阅</p> <br />
+						<p><a href="#"><img src="img/sina.png"/> &nbsp;&nbsp;微博关注</a></p>
+						<p><a href="#"><img src="img/wechat.png"/>&nbsp;&nbsp;&nbsp;微信关注</a></p>
+					</li>
+					<li><img src="img/二维码.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="foot_er_2">
+			CopyRight @ 2002--2017   闽ICP备07030066号-1777
+		</div>
+	</body>
+	<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.551865,38.890664);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    
+    initMap();//创建和初始化地图
+</script>
+</html>

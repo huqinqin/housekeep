@@ -1,0 +1,69 @@
+.fish_main{
+	height: 2915px;
+	width: 100%;
+	background-color: rgb(245,245,245);
+}
+
+.fish_center{
+	margin: auto;
+	height: 2805px;
+	width: 1200px;
+	background-color: rgb(245,245,245);
+	/*border: 1px solid black;*/
+	overflow: hidden;
+}
+.fish_up{
+	margin: auto;
+	height: 110px;
+	width: 1200px;
+	/*background-color: rgb(245,245,245);*/
+	/*background-color: goldenrod;*/
+}
+.fish_up div{
+	width: 100%;
+	height: 1px;
+	background-color: gainsboro;
+}
+
+.fish_left{
+	float: left;
+	height: 2805px;
+	width: 250px;
+	/*background-color: ghostwhite;*/
+	text-align: center;
+}
+.fish_right{
+	float: left;
+	height: 2805px;
+	width: 950px;
+	/*background-color: gray;*/
+}
+.fish_left h2,.fish_left h3{
+	width: 160px;
+	height: 30px;
+	margin-bottom: 10px;
+	font-weight: 300;
+	margin-left:20px;
+	line-height: 30px;
+}
+
+#fish_h3{
+	color: gray;
+	
+	
+}
+#fish_h3:hover{
+	background-color: rgb(42,25,0);
+	color: white;
+}
+.fish_left h2:nth-child(4){
+	background-color: rgb(42,25,0);
+	color: white;
+	font-size: 18px;
+	line-height: 30px;
+
+}
+.fish_right img{
+	width: 100%;
+	height: 100%;
+}

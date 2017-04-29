@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/commonfooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/commonheader.css"/>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			li {
+				list-style: none;
+			}
+			/*头部*/
+			
+			.header {
+				width: 100%;
+				height: 130px;
+				border-bottom: 2px solid #382101;
+			}
+			
+			.header_main {
+				width: 1200px;
+				padding-top: 12px;
+				height: 66px;
+				margin: 0 auto;
+			}
+			
+			.header_main_l {
+				float: left;
+				width: 375px;
+			}
+			
+			.header_main_r {
+				float: right;
+			}
+			
+			.header_main_r p {
+				font-size: 12px;
+			}
+			
+			.header_main_r p span {
+				font-size: 16px;
+				font-weight: bolder;
+			}
+			
+			.search {
+				width: 235px;
+				height: 26px;
+				border-radius: 30px;
+				margin-top: 15px;
+				overflow: hidden;
+			}
+			
+			#sea_text {
+				width: 128px;
+				height: 24px;
+				background: none;
+				border: 1px solid #cccccc;
+				border-right: 0;
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+				padding: 0 10px 0 20px;
+			}
+			
+			#btn {
+				width: 76px;
+				height: 26px;
+				color: #fff;
+				text-indent: 15px;
+				border: none;
+				background: url(img/放大镜.png) no-repeat #382101 center left 15px;
+				/*position: relative;
+    				left: -2px;*/
+			}
+			
+			.nav {
+				margin-top: 9px;
+				float: right;
+				clear: both;
+			}
+			
+			.nav a {
+				display: inline-block;
+				color: #382101;
+				font-size: 14px;
+				padding: 12px 28px;
+				border-radius: 10px;
+			}
+			
+			.nav a:hover {
+				background-color: rgb(42, 25, 0);
+				color: white;
+			}
+			/*产品中心*/
+			/*middle_h*/
+			
+			.middle_h {
+				width: 1164px;
+				height: 74px;
+				margin: 0 auto;
+				line-height: 74px;
+				padding-left: 36px;
+				border-bottom: 1px solid #e5e5e5;
+				font-size: 12px;
+				color: #666666;
+			}
+			
+			.middle_h a {
+				color: #666666;
+				;
+			}
+			
+			.middle_h a:hover {
+				color: orange;
+			}
+			/*主体图片部分*/
+			
+			.middle_main {
+				margin: 0 auto;
+				margin-top: 27px;
+				width: 1200px;
+				/*height: 2000px;*/
+			}
+			
+			.header_main_l {
+				width: 173px;
+				float: left;
+				/*overflow: hidden;*/
+			}
+			
+			.middle_main_l h1 {
+				width: 173px;
+				font-size: 20px;
+				height: 64px;
+				line-height: 64px;
+				text-align: center;
+				background-color: #ffd200;
+				color: #382101;
+			}
+			
+			.middle_main_l_left {
+				float: left;
+				/*width: ;*/
+			}
+			
+			.middle_main_l_right {
+				width: 142px;
+				float: left;
+			}
+			
+			#ul1 {
+				width: 142px;
+				padding-top: 15px;
+				border-left: 1px solid darkgray;
+			}
+			
+			#ul1 li {
+				width: 142px;
+				height: 50px;
+				text-align: center;
+				line-height: 50px;
+			}
+			
+			#ul1 li a {
+				display: inline-block;
+				height: 40px;
+				line-height: 40px;
+				color: #382101;
+				font-size: 14px;
+			}
+			
+			#ul1 li a:hover {
+				border-bottom: 2px solid #ffd200;
+			}
+			
+			#haige{
+				border-bottom: 2px solid #ffd200;
+			}
+			
+			.middle_main_r_father {
+				width: 993px;
+				float: right;
+				height: 1485px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.middle_main_r {
+				width: 993px;
+				position: absolute;
+				top: 0;
+			}
+			
+			.middle_main_r .tianjia {
+				width: 306px;
+				height: 465px;
+				margin-left: 25px;
+				margin-bottom: 30px;
+				float: left;
+				display: inline-block;
+				position: relative;
+			}
+			
+			.middle_main_r .tianjia img {
+				width: 306px;
+				height: 306px;
+			}
+			
+			.middle_main_r .tianjia .d2 {
+				width: 306px;
+				height: 465px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #ffd200;
+				opacity: 0.6;
+				display: none;
+			}
+			
+			.middle_main_r .tianjia:hover .d2{
+				display: block;
+			}
+			
+			.middle_main_r .tianjia .d2 .xiangqing {
+				display: block;
+				width: 181px;
+				height: 51px;
+				border: 2px solid #000000;
+				text-align: center;
+				line-height: 47px;
+				font-size: 18px;
+				color: #382101;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -92px;
+				margin-top: -27px;
+				cursor: pointer;
+				z-index: 10;
+			}
+			
+			.middle_main_r .tianjia .d1 {
+				width: 272px;
+				height: 58px;
+				padding: 17px;
+				background-color: rgb(245, 245, 245);
+			}
+			
+			.middle_main_r .tianjia .d1 .p1 {
+				font-size: 18px;
+				color: #333333;
+				border-bottom: 1px dashed #d0d0d0;
+				padding-bottom: 10px;
+				margin-bottom: 7px;
+			}
+			
+			.middle_main_r .tianjia .d1 .p2 {
+				font-size: 14px;
+				color: #333333;
+			}
+			
+			.middle_main_r .tianjia .d1 .p2 .span {
+				font-size: 18px;
+				color: #ff6600;
+				padding-left: 30px;
+			}
+			/*页码*/
+			.yemian{
+				clear: both;
+				width: 116px;
+				height: 36px;
+				margin: 0 auto;
+				margin-top: 57px;
+				/*margin-bottom: 20px;*/
+			}
+			.yemian a{
+				display: inline-block;
+				width: 34px;
+				height: 34px;
+				text-align: center;
+				line-height: 34px;
+				font-size: 14px;
+				border: 1px solid gray;
+				border-radius: 5px;
+			}
+			.yellow{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="header_main">
+				<div class="header_main_l">
+					<img src="img/上部logo.png" />
+				</div>
+				<div class="header_main_r">
+					<p><img src="img/电话logo.gif" />服务热线：<span>400-6655-888</span>|
+						<a href="index.html#load_first"><img src="img/手机logo.gif" />手机下载</a>
+					</p>
+					<div class="search">
+						<input type="text" id="sea_text" placeholder="请输入关键词" /><a href="search.html"><input type="submit" name="btn" id="btn" value="搜索" /></a>
+					</div>
+				</div>
+				<div class="nav">
+					<a href="index.html">首页</a>
+					<a href="about.html">关于莲想</a>
+					<a href="product.html" style="color: white;background-color: rgb(42,25,0);">产品中心</a>
+					<a href="news.html">新闻中心</a>
+					<a href="cooperation.html">合作加盟</a>
+					<a href="employ.html">人才招聘</a>
+					<a href="contact.html">联系我们</a>
+				</div>
+			</div>
+		</div>
+		<!---->
+		<div class="middle">
+			<div class="middle_h">
+				<img src="img/产品中心_房子_logo.png" />
+				<a href="index.html">首页</a> >
+				<a href="product.html">产品中心</a>
+			</div>
+			<!--图片-->
+			<div class="middle_main">
+				<div class="middle_main_l">
+					<h1>产品中心</h1>
+					<div class="middle_main_l_left">
+						<img src="img/产品中心_小三角.png" />
+					</div>
+					<div class="middle_main_l_right">
+						<ul id="ul1">
+							<li>
+								<a class="chanpin" href="#">家庭保洁</a>
+							</li>
+							<li>
+								<a class="chanpin" href="#">玻璃清理</a>
+							</li>
+							<li>
+								<a class="chanpin" href="#">除尘除螨</a>
+							</li>
+							<li>
+								<a class="chanpin" href="#">高温蒸汽</a>
+							</li>
+							<li>
+								<a class="chanpin" href="#">开荒</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="middle_main_r_father">
+					<div class="middle_main_r">
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="yemian">
+			<a class="yellow" href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+		</div>
+		
+		
+		
+		<!--底部-->
+		<!--底部-->
+		<!--倒数第二个-->
+		<div class="foot_er">
+			<div class="foot_er1">
+				<br /><br /><br /><br /><br />
+				<ul>
+					<li> 
+						<p>服务说明</p> <br />
+						<p><a href="service_assurance.html">服务保障</a></p>
+					</li>
+					<li>
+						<p>帮助中心</p> <br />
+						<p><a href="fishman_guide.html">新手指导</a></p>
+					</li>
+					<li> 
+						<p>友情链接</p> <br />
+						<p><a href="#">厦门鑫点击网络科技股份有限公司</a></p>
+						<p><a href="#">建发股份</a></p>
+					</li>
+					<li> 
+						<p>关注与订阅</p> <br />
+						<p><a href="#"><img src="img/sina.png"/> &nbsp;&nbsp;微博关注</a></p>
+						<p><a href="#"><img src="img/wechat.png"/>&nbsp;&nbsp;&nbsp;微信关注</a></p>
+					</li>
+					<li><img src="img/二维码.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="foot_er_2">
+			CopyRight @ 2002--2017   闽ICP备07030066号-1777
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		
+	
+	
+	
+	
+	
+	
+	
+	
+		//准备数据
+		//准备数据和图片对应
+		var baojie = ["三小时保洁29次 年卡", "三小时保洁/4次 月卡", "翡翠保洁", "金牌保洁", "三小时保洁"];
+		var baojie_money = ["¥3199/人", "¥358/人", "¥99-150/人", "¥99-150/人", "¥99-150/人"];
+		var boli = ["个人玻璃清理","公司大楼玻璃清理"];
+		var boli_money = ["¥48/人", "¥100-300/人"];
+		var chuchen = ["波轮洗衣机深度清洗", "冰箱蒸汽深度清洗", "热水器清洗", "油烟机专业清洗", "空调深度清洗"];
+		var chuchen_money = ["¥160/人", "¥145-198/人", "¥130/人", "¥130/人", "¥30-80/人"];
+		var zhengqi = ["中级月嫂", "高级月嫂", "普通月嫂", "住家保姆", "单餐保姆", "计时保姆"];
+		var zhengqi_money = ["¥10000/人", "¥8000-12000/人", "¥5000/人", "¥3500/人", "¥1800/人", "¥160/人"];
+		var kaihuang = ["皮沙发保养", "地毯清洗"];
+		var kaihuang_money = ["¥80/人", "¥230/人"];
+
+
+		//
+		var middle_main_r = document.getElementsByClassName("middle_main_r")[0];
+		huatu(middle_main_r, 20, 52, true);
+		xiang();
+		var as = document.getElementsByClassName('chanpin');
+		for(var i = 0; i < as.length; i++) {
+			as[i].index = i;
+			as[i].onclick = function() {
+				yemian.style.display="none";
+				middle_main_r.style.top=0;
+				for(var j = 0; j < as.length; j++) {
+					as[j].id = "";
+				}
+				this.id = "haige";
+				middle_main_r.innerHTML = "";
+				switch(this.index) {
+					case 0:
+						huatu(middle_main_r, 5, 4, false);
+						xiang();
+						break;
+					case 1:
+						huatu(middle_main_r, 2, 6, false);
+						xiang();
+						break;
+					case 2:
+						huatu(middle_main_r, 5, 11, false);
+						xiang();
+						break;
+					case 3:
+						huatu(middle_main_r, 6, 17, false);
+						xiang();
+						break;
+					case 4:
+						huatu(middle_main_r, 2, 19, false);
+						xiang();
+						break;
+					default:
+						break;
+				}
+			}
+		}
+		
+		
+		//页面
+		var as2=document.querySelectorAll(".yemian>a");
+		var yemian=document.getElementsByClassName('yemian')[0];
+		for(var i=0;i<as2.length;i++){
+			as2[i].index=i;
+			as2[i].onclick=function(){
+				for(var j=0;j<as2.length;j++){
+					as2[j].className="";
+				}
+				this.className="yellow";
+				middle_main_r.style.top=-1485*this.index+'px';
+			}
+		}
+		
+		
+		//详情
+		function xiang(){
+			var xiangqing=document.getElementsByClassName('xiangqing');
+			for(var i=0;i<xiangqing.length;i++){
+				xiangqing[i].onclick=function(){
+					window.location.href="xiangqing.html"; 
+				}
+			}
+		}
+		
+		
+		
+		//生成函数
+		function shengcheng(obj,divs,csss){
+			var newD=document.createElement(divs);
+			obj.appendChild(newD);
+			newD.className=csss;
+			return newD;
+		}
+		//obj:添加在哪   i:图片个数   x和bool控制导航按钮点击(左边)
+		function huatu(obj, i, x, bool) {
+			for(var j = 0; j < i; j++) {
+				//添加元素与样式
+				var newDiv=shengcheng(obj,'div','tianjia');
+				var newImg=shengcheng(newDiv,'img','');
+				var newDiv1=shengcheng(newDiv,'div','d1');
+				var newP1=shengcheng(newDiv1,'p','p1');
+				var newP2=shengcheng(newDiv1,'p','p2');
+				var newSpan2=shengcheng(newP2,'span','');
+				var newSpan=shengcheng(newP2,'span','span');
+				var newDiv2=shengcheng(newDiv,'div','d2');
+				var newA=shengcheng(newDiv2,'a','xiangqing');
+				//内容
+				newA.innerHTML="查看详情";
+				if(bool == false) {
+					if(x < 5) {
+						newImg.src = "img/产品中心_保洁_" + x + ".jpg";
+						newP1.innerHTML = baojie[x];
+						newSpan.innerHTML = baojie_money[x];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+					if(x < 7 && x >= 5) {
+						newImg.src = "img/产品中心_搬家_" + (x - 5) + ".jpg";
+						newP1.innerHTML = boli[x - 5];
+						newSpan.innerHTML = boli_money[x - 5];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+					if(x < 12 && x >= 7) {
+						newImg.src = "img/产品中心_家电_" + (x - 7) + ".jpg";
+						newP1.innerHTML = chuchen[x - 7];
+						newSpan.innerHTML = chuchen_money[x - 7];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+					if(x < 18 && x >= 12) {
+						newImg.src = "img/产品中心_月嫂_" + (x - 12) + ".jpg";
+						newP1.innerHTML = zhengqi[x - 12];
+						newSpan.innerHTML = zhengqi_money[x - 12];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+					if(x < 20 && x >= 18) {
+						newImg.src = "img/产品中心_洗涤_" + (x - 18) + ".jpg";
+						newP1.innerHTML = kaihuang[x - 18];
+						newSpan.innerHTML = kaihuang_money[x - 18];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+				}
+
+				if(bool) {
+					if(j < 5) {
+						newImg.src = "img/产品中心_保洁_" + j + ".jpg";
+						newP1.innerHTML = baojie[j];
+						newSpan.innerHTML = baojie_money[j];
+						newSpan2.innerHTML = "产品价格";
+					}
+					if(j < 7 && j >= 5) {
+						newImg.src = "img/产品中心_搬家_" + (j - 5) + ".jpg";
+						newP1.innerHTML = boli[j - 5];
+						newSpan.innerHTML = boli_money[j - 5];
+						newSpan2.innerHTML = "产品价格";
+					}
+					if(j < 12 && j >= 7) {
+						newImg.src = "img/产品中心_家电_" + (j - 7) + ".jpg";
+						newP1.innerHTML = chuchen[j - 7];
+						newSpan.innerHTML = chuchen_money[j - 7];
+						newSpan2.innerHTML = "产品价格";
+					}
+					if(j < 18 && j >= 12) {
+						newImg.src = "img/产品中心_月嫂_" + (j - 12) + ".jpg";
+						newP1.innerHTML = zhengqi[j - 12];
+						newSpan.innerHTML = zhengqi_money[j - 12];
+						newSpan2.innerHTML = "产品价格";
+					}
+					if(j < 20 && j >= 18) {
+						newImg.src = "img/产品中心_洗涤_" + (j - 18) + ".jpg";
+						newP1.innerHTML = kaihuang[j - 18];
+						newSpan.innerHTML = kaihuang_money[j - 18];
+						newSpan2.innerHTML = "产品价格";
+					}
+				}
+			}
+		}
+	</script>
+
+</html>

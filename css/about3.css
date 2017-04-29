@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(249,249,249);
+}
+.center_one{
+	width: 1600px;
+	height: 500px;
+	margin: auto;
+	background-image: url(../img/荣誉.大图.jpg);
+}
+.center{
+	width: 1200px;
+	margin: auto;
+	margin-top: -190px;
+	position: relative;
+	background-color: white;
+}
+.center1{
+	width: 1200px;
+	height: 74px;
+}
+.center1_1{
+	float: left;
+	margin: 0 30px;
+	line-height: 74px;
+	font-size: 13px;
+}
+.center1_1 a{
+	color: black;
+}
+.center1_1 a:hover{
+	color: #FFA500;
+}
+.center1_2{
+	width: 352px;
+	height: 74px;
+	float: right;
+	margin-right: 50px;
+}
+.center1_2 li{
+	line-height: 74px;
+	float: left;
+	font-size: 14px;
+	margin-left: 30px;
+}
+.center1_2 li a{
+	padding-bottom: 30px;
+}
+.center1_2 li a:nth-child(3){
+	padding-bottom: 28px;
+}
+.center1_2 li:nth-child(3) a{
+	border-bottom: 2px solid #FFA500;
+}
+.center1_2 li a:hover{
+	border-bottom: 3px solid #FFA500;
+}
+
+
+
+
+
+.center2{
+	width: 265px;
+	height: 300px;
+	margin-left: 50px;
+	margin-top: 55px;
+	padding-bottom: 100px;
+}
+
+			a{
+				text-decoration: none;
+			}
+			.center2_1{
+				width: 263px;
+				height: 214px;
+				border: 1px solid gray;
+				text-align: center;
+				line-height: 263px;
+				padding-top: 49px;
+				position: relative;
+			}
+			.center2_1 img{
+				width: 243px; height: 156px;
+			}
+			.chakan{
+				width: 263px;
+				height: 263px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: yellow;
+				opacity: 0.6;
+				display: none;
+			}
+			
+			.chakan a{
+				display: block;
+    				width: 181px;
+    				height: 51px;
+    				border: 2px solid #000000;
+    				text-align: center;
+    				line-height: 47px;
+    				font-size: 18px;
+    				color: #382101;
+    				position: absolute;
+    				left: 50%;
+    				top: 50%;
+    				margin-top: -26px;
+    				margin-left: -91px;
+    				opacity: 1;
+			}
+			.center2_1:hover .chakan{
+				display: block;
+			}
+			.picture{
+				width: 100%;
+				height: 1435px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: black;
+				opacity: 0.5;
+				display: none;
+			}
+			#photo{
+				position: absolute;
+				top: 100px;
+				left: 50%;
+				margin-left: -180px;
+				display: none;
+			}
+
+
+
+
+
+
+
+
+
+.center2_2{
+	width: 265px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/commonheader.css"/>
+		<link rel="stylesheet" type="text/css" href="css/commonfooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cooperation.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_main">
+				<div class="header_main_l">
+					<img src="img/上部logo.png"/>
+				</div>
+				<div class="header_main_r">
+					<p><img src="img/电话logo.gif"/>服务热线：<span>400-6655-888</span>|
+						<a href="index.html"><img src="img/手机logo.gif"/>手机下载</a></p>
+					<div class="search">
+						<input type="text" id="sea_text" placeholder="请输入关键词" /><input type="submit" name="btn" id="btn" value="搜索" />
+					</div>
+				</div>
+				<div class="nav">
+					<a href="index.html">首页</a>
+					<a href="about.html">关于莲想</a>
+					<a href="product.html">产品中心</a>
+					<a href="news.html">新闻中心</a>
+					<a href="cooperation.html"  style="color: white;background-color: rgb(42,25,0);">合作加盟</a>
+					<a href="employ.html">人才招聘</a>
+					<a href="contact.html">联系我们</a>
+				</div>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="center_one"></div>
+		<div class="center">
+			<div class="center1">
+				<div class="center1_1">
+					<img src="img/关于.小房子.png"/>
+					<a href="index.html">首页</a> &nbsp;&nbsp;>&nbsp;&nbsp;
+					<a href="cooperation.html#btn">合作加盟</a>
+				</div>
+			</div>
+			<hr style="color: #A9A9A9;" />
+			
+			
+			
+			<div class="center2">
+				<div class="center2_1">
+					<h2>合作加盟信息 欢迎您的加入</h2>
+					<div class="center2_21"></div>
+					
+					<div class="tijiao">
+						<p><span>*</span><input type="text" name="" id="" value="" placeholder="姓名" /><label class="error"></label></p>
+						<p><span>*</span><input type="text" name="" id="" value="" placeholder="邮箱地址" /><label class="error"></label></p>
+						<p><span>*</span><input type="text" name="" id="" value="" placeholder="联系电话" /><label class="error"></label></p>
+						<p><span>*</span><textarea name="" rows="" cols="" placeholder="留言内容"></textarea><label class="error"></label></p>
+						<input type="button" name="anniu" id="anniu" value="提交" />
+					</div>
+					
+					
+					<h2>合作商户</h2>
+					<div class="center2_21"></div>
+				</div>
+				
+				
+				
+				
+				
+				<div class="center2_2">
+					<img src="img/合作小1.jpg"/><img src="img/合作小2.jpg"/><img src="img/合作小3.jpg"/><img src="img/合作小4.jpg"/><img src="img/合作小5.jpg"/><img src="img/合作小6.jpg"/><img src="img/合作小7.jpg"/><img src="img/合作小8.jpg"/><img src="img/合作小9.jpg"/><img src="img/合作小10.jpg"/>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<!--倒数第二个-->
+		<div class="foot_er">
+			<div class="foot_er1">
+				<br /><br /><br /><br /><br />
+				<ul>
+					<li> 
+						<p>服务说明</p> <br />
+						<p><a href="service_assurance.html">服务保障</a></p>
+					</li>
+					<li>
+						<p>帮助中心</p> <br />
+						<p><a href="fishman_guide.html">新手指导</a></p>
+					</li>
+					<li> 
+						<p>友情链接</p> <br />
+						<p><a href="#">厦门鑫点击网络科技股份有限公司</a></p>
+						<p><a href="#">建发股份</a></p>
+					</li>
+					<li> 
+						<p>关注与订阅</p> <br />
+						<p><a href="#"><img src="img/sina.png"/> &nbsp;&nbsp;微博关注</a></p>
+						<p><a href="#"><img src="img/wechat.png"/>&nbsp;&nbsp;&nbsp;微信关注</a></p>
+					</li>
+					<li><img src="img/二维码.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="foot_er_2">
+			CopyRight @ 2002--2017   闽ICP备07030066号-1777
+		</div>
+	</body>
+	<script type="text/javascript">
+		var inputs=document.querySelectorAll('.tijiao>p>input');
+		var anniu=document.getElementById('anniu');
+		var error=document.getElementsByClassName('error');
+		var txt=document.querySelectorAll('.tijiao>p>textarea')[0];
+		var kong=["请填写姓名","请填写邮箱","号码不能为空","请填写内容"];
+		
+		// onblur
+		anniu.onclick=function(){
+			for(var i=0;i<3;i++){
+				if(inputs[i].value==""){
+					error[i].innerHTML=kong[i];
+				}
+			}
+			if(txt.value==""){
+				error[3].innerHTML=kong[3];
+			}
+			if(error[0].innerHTML==""&&error[1].innerHTML==""&&error[2].innerHTML==""&&error[3].innerHTML==""&&inputs[0].value!=""&&inputs[1].value!=""&&inputs[2].value!=""&&txt.value!=""){
+				alert("注册成功");
+				window.location.href="cooperation.html";
+			}
+		}
+		for(var i=0;i<3;i++){
+			inputs[i].index=i;
+			inputs[i].onkeyup=function(){
+				if(inputs[this.index].value!=""){
+					error[this.index].innerHTML="";
+				}
+				if(this.index==1){
+					var re  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-8\-])+\.)+([a-zA-Z0-9]{2,6})+$/;
+					if(re.test(this.value)){
+						error[this.index].innerHTML="";
+					}else{
+						error[this.index].innerHTML="输入格式有误";
+					}
+				}
+			}
+		}
+		txt.onkeyup=function(){
+			if(txt.value!=""){
+				error[3].innerHTML="";
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,74 @@
+.contact_main{
+	width: 1600px;
+	height: 1145px;
+	background-color:rgb(245,245,245);
+	margin: auto;
+	
+}
+.pic1{
+	height: 500px;
+	width: 1600px;
+	margin:0 auto;
+	position: relative;
+}
+
+.divfixed{
+	height: 830px;
+	width: 1200px;
+	background-color: white;
+	position: absolute;
+	left: 200px;
+	top: 310px;
+}
+.divfixed_up{
+	height: 280px;
+	width: 1200px;
+}
+
+.con_first{
+	height: 70px;
+	width: 1200px;
+	/*background-color: red;*/
+	border-bottom: 1px solid black;
+	/*padding-top: 30px;*/
+}
+.con_first div{
+	padding-top: 30px;
+	padding-left: 23px;
+}
+.con_first div a{
+	color: dimgray;
+	font-size: 14px;
+}
+.con_first div a:hover{
+	color: orange;
+}
+.divfixed_down{
+	height: 500px;
+	width: 1200px;
+	background-color: gray;
+}
+.divfixed_footer{
+	height: 50px;
+	width: 1200px;
+	background-color: white;
+}
+
+
+.con_two h1{
+	margin-left: 55px;
+	margin-top: 40px;
+	margin-bottom: 24px;
+}
+.con_two p{
+	margin-left: 45px;
+	margin-bottom: 12px;
+}
+.span{
+	margin-left: 5px;
+	font-size: 15px;
+}
+.span:nth-child(1){
+	margin-right: 310px;
+}
+

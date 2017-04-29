@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgb(249,249,249);
+}
+.center_one{
+	width: 1600px;
+	height: 500px;
+	margin: auto;
+	background-image: url(../img/合作大图.jpg);
+}
+.center{
+	width: 1200px;
+	margin: auto;
+	margin-top: -190px;
+	position: relative;
+	background-color: white;
+}
+.center1{
+	width: 1200px;
+	height: 74px;
+}
+.center1_1{
+	float: left;
+	margin: 0 30px;
+	line-height: 74px;
+	font-size: 13px;
+}
+.center1_1 a{
+	color: black;
+}
+.center1_1 a:hover{
+	color: #FFA500;
+}
+.center1_2{
+	width: 352px;
+	height: 74px;
+	float: right;
+	margin-right: 50px;
+}
+.center1_2 li{
+	line-height: 74px;
+	float: left;
+	font-size: 14px;
+	margin-left: 30px;
+}
+.center1_2 li a{
+	padding-bottom: 30px;
+}
+.center1_2 li a:nth-child(2){
+	padding-bottom: 28px;
+}
+.center1_2 li:nth-child(2) a{
+	border-bottom: 2px solid #FFA500;
+}
+.center1_2 li a:hover{
+	border-bottom: 3px solid #FFA500;
+}
+
+
+
+
+
+.center2{
+	width: 1200px;
+	margin-top: 190px;
+}
+.center2 p{
+	font-size: 14px;
+	line-height: 10px;
+	margin: 25px 37px 0 37px;
+}
+.center2_1{
+	margin-top: 50px;
+	margin-left: 38px;
+	padding-bottom: 100px;
+}
+.center2_1 img{
+	margin: 0;
+	margin-top: -2px;
+}

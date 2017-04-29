@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/commonfooter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/commonheader.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			.middle_h {
+				width: 1164px;
+				height: 74px;
+				margin: 0 auto;
+				line-height: 74px;
+				padding-left: 36px;
+				border-bottom: 1px solid #e5e5e5;
+				font-size: 12px;
+				color: #666666;
+			}
+			
+			.middle_h a {
+				color: #666666;
+				;
+			}
+			
+			.middle_h a:hover {
+				color: orange;
+			}
+			/**/
+			.father{
+				background-color: rgb(245,245,245);
+			}
+			.box{
+				width: 1139px;
+				padding: 23px 25px 50px 36px;
+				margin: 0 auto;
+			}
+			.sousuo{
+				color: #999999;
+    				font-size: 14px;
+    				margin-bottom: 30px;
+			}
+			/*主体*/
+			.middle_main_r_father {
+				width: 993px;
+				height: 1890px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.middle_main_r {
+				width: 993px;
+				position: absolute;
+				top: 0;
+			}
+			
+			.middle_main_r .tianjia {
+				width: 306px;
+				height: 465px;
+				margin-left: 25px;
+				margin-bottom: 30px;
+				float: left;
+				display: inline-block;
+				position: relative;
+			}
+			
+			.middle_main_r .tianjia img {
+				width: 306px;
+				height: 306px;
+			}
+			
+			.middle_main_r .tianjia .d2 {
+				width: 306px;
+				height: 465px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #ffd200;
+				opacity: 0.6;
+				display: none;
+			}
+			
+			.middle_main_r .tianjia:hover .d2{
+				display: block;
+			}
+			
+			.middle_main_r .tianjia .d2 .xiangqing {
+				display: block;
+				width: 181px;
+				height: 51px;
+				border: 2px solid #000000;
+				text-align: center;
+				line-height: 47px;
+				font-size: 18px;
+				color: #382101;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -92px;
+				margin-top: -27px;
+				cursor: pointer;
+			}
+			
+			.middle_main_r .tianjia .d1 {
+				width: 272px;
+				height: 58px;
+				padding: 17px;
+				background-color: rgb(245, 245, 245);
+			}
+			
+			.middle_main_r .tianjia .d1 .p1 {
+				font-size: 18px;
+				color: #333333;
+				border-bottom: 1px dashed #d0d0d0;
+				padding-bottom: 10px;
+				margin-bottom: 7px;
+			}
+			
+			.middle_main_r .tianjia .d1 .p2 {
+				font-size: 14px;
+				color: #333333;
+			}
+			
+			.middle_main_r .tianjia .d1 .p2 .span {
+				font-size: 18px;
+				color: #ff6600;
+				padding-left: 30px;
+			}
+			/*页码*/
+			.yemian{
+				width: 76px;
+				height: 36px;
+				margin: 0 auto;
+				margin-top: 57px;
+			}
+			.yemian a{
+				display: inline-block;
+				width: 34px;
+				height: 34px;
+				text-align: center;
+				line-height: 34px;
+				font-size: 14px;
+				border: 1px solid gray;
+				border-radius: 5px;
+			}
+			.yellow{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_main">
+				<div class="header_main_l">
+					<img src="img/上部logo.png"/>
+				</div>
+				<div class="header_main_r">
+					<p><img src="img/电话logo.gif"/>服务热线：<span>400-6655-888</span>|
+						<a href="index.html#load_first"><img src="img/手机logo.gif"/>手机下载</a></p>
+					<div class="search">
+						<input type="text" id="sea_text" placeholder="请输入关键词" /><a href="search.html"><input type="submit" name="btn" id="btn" value="搜索" /></a>
+					</div>
+				</div>
+				<div class="nav">
+					<a href="index.html">首页</a>
+					<a href="about.html">关于莲想</a>
+					<a href="product.html" style="color: white;background-color: rgb(42,25,0);">产品中心</a>
+					<a href="news.html">新闻中心</a>
+					<a href="cooperation.html">合作加盟</a>
+					<a href="employ.html">人才招聘</a>
+					<a href="contact.html">联系我们</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div class="father">
+			<div class="middle_h">
+				<img src="img/产品中心_房子_logo.png" />
+				<a href="index.html">首页</a> >
+				<a href="product.html">搜索结果</a>
+			</div>
+			<div class="box">
+				<div class="sousuo">
+					搜索<span></span>共产生<span></span>条结果
+				</div>
+				<div class="middle_main_r_father">
+					<div class="middle_main_r">
+								
+					</div>
+				</div>
+				<div class="yemian">
+					<a class="yellow" href="#">1</a>
+					<a href="#">2</a>
+					<!--<a href="#">3</a>-->
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!--底部-->
+		<!--底部-->
+		<!--倒数第二个-->
+		<div class="foot_er">
+			<div class="foot_er1">
+				<br /><br /><br /><br /><br />
+				<ul>
+					<li> 
+						<p>服务说明</p> <br />
+						<p><a href="service_assurance.html">服务保障</a></p>
+					</li>
+					<li>
+						<p>帮助中心</p> <br />
+						<p><a href="fishman_guide.html">新手指导</a></p>
+					</li>
+					<li> 
+						<p>友情链接</p> <br />
+						<p><a href="#">厦门鑫点击网络科技股份有限公司</a></p>
+						<p><a href="#">建发股份</a></p>
+					</li>
+					<li> 
+						<p>关注与订阅</p> <br />
+						<p><a href="#"><img src="img/sina.png"/> &nbsp;&nbsp;微博关注</a></p>
+						<p><a href="#"><img src="img/wechat.png"/>&nbsp;&nbsp;&nbsp;微信关注</a></p>
+					</li>
+					<li><img src="img/二维码.jpg"/></li>
+				</ul>
+			</div>
+		</div>
+		<!--最底部-->
+		<div class="foot_er_2">
+			CopyRight @ 2002--2017   闽ICP备07030066号-1777
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		var baojie = ["三小时保洁29次 年卡", "三小时保洁/4次 月卡", "翡翠保洁", "金牌保洁", "三小时保洁"];
+		var baojie_money = ["¥3199/人", "¥358/人", "¥99-150/人", "¥99-150/人", "¥99-150/人"];
+		var banjia = ["计时搬家服务", "搬家用车,运输,载货服务"];
+		var banjia_money = ["¥48/人", "¥100-300/人"];
+		var jiadian = ["波轮洗衣机深度清洗", "冰箱蒸汽深度清洗", "热水器清洗", "油烟机专业清洗", "空调深度清洗"];
+		var jiadian_money = ["¥160/人", "¥145-198/人", "¥130/人", "¥130/人", "¥30-80/人"];
+		var yuesao = ["中级月嫂", "高级月嫂", "普通月嫂", "住家保姆", "单餐保姆", "计时保姆"];
+		var yuesao_money = ["¥10000/人", "¥8000-12000/人", "¥5000/人", "¥3500/人", "¥1800/人", "¥160/人"];
+		var xidi = ["皮沙发保养", "地毯清洗"];
+		var xidi_money = ["¥80/人", "¥230/人"];
+
+
+		//
+		var middle_main_r = document.getElementsByClassName("middle_main_r")[0];
+		huatu(middle_main_r, 20, 52, true);
+		xiang();
+		//页面
+		var as2=document.querySelectorAll(".yemian>a");
+		var yemian=document.getElementsByClassName('yemian')[0];
+		for(var i=0;i<as2.length;i++){
+			as2[i].index=i;
+			as2[i].onclick=function(){
+				for(var j=0;j<as2.length;j++){
+					as2[j].className="";
+				}
+				this.className="yellow";
+				middle_main_r.style.top=-1890*this.index+'px';
+			}
+		}
+		
+		function xiang() {
+			var xiangqing = document.getElementsByClassName('xiangqing');
+			for(var i = 0; i < xiangqing.length; i++) {
+				xiangqing[i].onclick = function() {
+					window.location.href = "xiangqing.html";
+				}
+			}
+		}
+		function huatu(obj, i, x, bool) {
+			for(var j = 0; j < i; j++) {
+				var newDiv = document.createElement('div');
+				obj.appendChild(newDiv);
+				var newImg = document.createElement('img');
+				newDiv.appendChild(newImg);
+				var newDiv1 = document.createElement('div');
+				newDiv.appendChild(newDiv1);
+				var newP1 = document.createElement('p');
+				newDiv1.appendChild(newP1);
+				var newP2 = document.createElement('p');
+				newDiv1.appendChild(newP2);
+				var newSpan2 = document.createElement('span');
+				newP2.appendChild(newSpan2);
+				var newSpan = document.createElement('span');
+				newP2.appendChild(newSpan);
+				var newDiv2 = document.createElement('div');
+				newDiv.appendChild(newDiv2);
+				var newA = document.createElement('a');
+				newDiv2.appendChild(newA);
+				//样式
+				newDiv.className = "tianjia";
+				newDiv1.className = "d1";
+				newDiv2.className = "d2";
+				newP1.className = "p1";
+				newP2.className = "p2";
+				newSpan.className = "span";
+				newA.className = "xiangqing";
+				//内容
+				newA.innerHTML="查看详情";
+				if(bool == false) {
+					if(x < 5) {
+						newImg.src = "img/产品中心_保洁_" + x + ".jpg";
+						newP1.innerHTML = baojie[x];
+						newSpan.innerHTML = baojie_money[x];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+					if(x < 7 && x >= 5) {
+						newImg.src = "img/产品中心_搬家_" + (x - 5) + ".jpg";
+						newP1.innerHTML = banjia[x - 5];
+						newSpan.innerHTML = banjia_money[x - 5];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+					if(x < 12 && x >= 7) {
+						newImg.src = "img/产品中心_家电_" + (x - 7) + ".jpg";
+						newP1.innerHTML = jiadian[x - 7];
+						newSpan.innerHTML = jiadian_money[x - 7];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+					if(x < 18 && x >= 12) {
+						newImg.src = "img/产品中心_月嫂_" + (x - 12) + ".jpg";
+						newP1.innerHTML = yuesao[x - 12];
+						newSpan.innerHTML = yuesao_money[x - 12];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+					if(x < 20 && x >= 18) {
+						newImg.src = "img/产品中心_洗涤_" + (x - 18) + ".jpg";
+						newP1.innerHTML = xidi[x - 18];
+						newSpan.innerHTML = xidi_money[x - 18];
+						newSpan2.innerHTML = "产品价格";
+						x--;
+					}
+				}
+
+				if(bool) {
+					if(j < 5) {
+						newImg.src = "img/产品中心_保洁_" + j + ".jpg";
+						newP1.innerHTML = baojie[j];
+						newSpan.innerHTML = baojie_money[j];
+						newSpan2.innerHTML = "产品价格";
+					}
+					if(j < 7 && j >= 5) {
+						newImg.src = "img/产品中心_搬家_" + (j - 5) + ".jpg";
+						newP1.innerHTML = banjia[j - 5];
+						newSpan.innerHTML = banjia_money[j - 5];
+						newSpan2.innerHTML = "产品价格";
+					}
+					if(j < 12 && j >= 7) {
+						newImg.src = "img/产品中心_家电_" + (j - 7) + ".jpg";
+						newP1.innerHTML = jiadian[j - 7];
+						newSpan.innerHTML = jiadian_money[j - 7];
+						newSpan2.innerHTML = "产品价格";
+					}
+					if(j < 18 && j >= 12) {
+						newImg.src = "img/产品中心_月嫂_" + (j - 12) + ".jpg";
+						newP1.innerHTML = yuesao[j - 12];
+						newSpan.innerHTML = yuesao_money[j - 12];
+						newSpan2.innerHTML = "产品价格";
+					}
+					if(j < 20 && j >= 18) {
+						newImg.src = "img/产品中心_洗涤_" + (j - 18) + ".jpg";
+						newP1.innerHTML = xidi[j - 18];
+						newSpan.innerHTML = xidi_money[j - 18];
+						newSpan2.innerHTML = "产品价格";
+					}
+				}
+			}
+		}
+	</script>
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
